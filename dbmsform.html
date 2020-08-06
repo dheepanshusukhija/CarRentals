@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+		<title>Book Now!</title>
+		<link rel="stylesheet"type="text/css"href="styles.css">
+</head>
+<body style="background-color: Black">
+<ul>
+  <li><a href="firstpage.html">Home</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="page3.html">Reviews</a></li>
+  <li><a href="page4.html">Contact Us</a></li>
+  <li><a class ="active" href="dbmsform.html">Book Now!</a></li>
+
+
+</ul>
+<div class="image" style="background-image:url('images/book.jpg');">	
+		<h1 style="opacity:0.85; font-size:150px;padding-top:30px;">Book Now!</h1>
+</div>
+<hr>
+<form name="reg1" action="dbms.php" method = "post" enctype = "multipart/form-data"><br>
+<div class="container">
+	<p>Choose the best car at affordable prices and high benefits. Book your car right now!</p><br><br>
+      <label for="name"><b>First Name</b></label><br>
+      <input type="text" name="cust_fname" placeholder="Enter your first name"><br><br>
+      
+	  <label for="name"><b>Last Name</b></label><br>
+      <input type="text" name="cust_lname" placeholder="Enter your last name"><br><br>
+	  
+	  <label for="name"><b>Address</b></label><br>
+      <input type="text" name="cust_addr" placeholder="Enter your address"><br><br>
+	  
+	  <label for="name"><b>Date of Birth</b></label><br>
+      <INPUT TYPE="DATE" NAME="dob" PLACEHOLDER="DD/MM/YYYY"> <br><br>
+      
+	  <label for="name"><b>Driving License No</b></label><br>
+      <input type="text" name="cust_dl" placeholder="Enter a valid license no"><br><br>   
+	  
+	  <label for="name"><b>Email</b></label><br>
+      <input type="text" name="cust_email" placeholder="Enter a valid email address"><br><br><br>
+	  
+	  <label for="name"><b>Select a Car</b></label><br>
+      <select name="car_brand">
+              <option value="" disabled selected>Select your option</option>
+              <option value="tata">Tata</option>
+              <option value="maruti">Maruti</option>
+			  <option value="audi">Audi</option>
+			  <option value="bmw">BMW</option>
+			  <option value="mercedes">Mercedes</option>
+			  <option value="nissan">Nissan</option>
+			  <option value="hyundai">Hyundai</option>
+
+      </select> <br><br>
+	  <button type="submit" value="submit" name="submit" onclick="">BOOK!</button><br><br><hr><br>
+	  <p>Want to cancel your booking? Don't Worry! Hassle free cancellation provided by FastCar.</p><br><br>
+	  <label for="name"><b>Enter Your Booking ID</b></label><br>
+      <input type="text" name="cust_id" placeholder="Enter your booking ID"><br><br>   
+	  <button type="delete" value="delete" name="delete" >DELETE</button><br><br>
+</div>
+</form>

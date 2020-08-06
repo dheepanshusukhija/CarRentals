@@ -1,0 +1,56 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<?xml-stylesheet type='text/xsl' href='liststyle.xsl'?>
+
+<!DOCTYPE note
+[
+<!ELEMENT SHOWING (MOVIE)>
+<!ELEMENT MOVIE (TITLE,RATING,LANGUAGE,ACTOR,HALL)>
+<!ELEMENT TITLE (#PCDATA)>
+<!ELEMENT RATING (#PCDATA)>
+<!ELEMENT LANGUAGE (#PCDATA)>
+<!ELEMENT ACTOR (#PCDATA)>
+<!ELEMENT HALL (#PCDATA)>
+]>
+
+<SHOWING>
+   <MOVIE>
+       <TITLE>Padmaavat</TITLE>
+       <RATING>7/10</RATING>
+       <LANGUAGE>Hindi</LANGUAGE>
+       <ACTOR>Deepika Padukone, Ranveer Singh</ACTOR>
+       <HALL>2</HALL>
+   </MOVIE>
+   
+   <MOVIE>
+       <TITLE>Shawshank Redemption</TITLE>
+       <RATING>9.3/10</RATING>
+       <LANGUAGE>English</LANGUAGE>
+       <ACTOR>Morgan Freeman, Tim Robbins</ACTOR>
+       <HALL>1</HALL>
+   </MOVIE>
+   
+   <MOVIE>
+       <TITLE>The Prestige</TITLE>
+       <RATING>8.5/10</RATING>
+       <LANGUAGE>English</LANGUAGE>
+       <ACTOR>Hugh Jackman, Christian Bale</ACTOR>
+       <HALL>5</HALL>
+   </MOVIE>
+   
+   <MOVIE>
+       <TITLE>3 Idiots</TITLE>
+       <RATING>8.5/10</RATING>
+       <LANGUAGE>Hindi</LANGUAGE>
+       <ACTOR>Amir Khan</ACTOR>
+       <HALL>3</HALL>
+   </MOVIE>
+   
+   <MOVIE>
+       <TITLE>Shutter Island</TITLE>
+       <RATING>8.2/10</RATING>
+       <LANGUAGE>English</LANGUAGE>
+       <ACTOR>Leonardo di Caprio, Mark Ruffalo</ACTOR>
+       <HALL>4</HALL>
+   </MOVIE>
+   
+</SHOWING>

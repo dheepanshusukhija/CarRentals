@@ -1,0 +1,73 @@
+<html>
+<title>
+form
+</title>
+<head>
+REGISTRATION FORM
+<script>
+function GetDays()
+{
+	var dropdt = new Date(document.getElementById("drop_date").value);
+                var duedt = new Date(document.getElementById("due_date").value);
+                return parseInt((dropdt - duedt) / (24 * 3600 * 1000));
+}
+function validateform()
+{
+	var cname,addr,phno,pd,dd,days;
+	cname= document.forms["form1"]["name"].value;
+	if (cname=="")
+	{
+		alert("name field blank");
+		return false;
+	}
+		addr= document.forms["form1"]["address"].value;
+	if (addr=="")
+	{
+		alert("Address field blank");
+		return false;
+	}
+	phno= document.forms["form1"]["phone"].value;
+	if (phno=="")
+	{
+		alert("Phone field blank");
+		return false;
+	}
+	pd= document.forms["form1"]["due_date"].value;
+	if (pd=="")
+	{
+		alert("due date field blank");
+		return false;
+	}
+dd= document.forms["form1"]["drop_date"].value;
+	if (dd=="")
+	{
+		alert("date of drop field blank");
+		return false;
+	}
+if(dd){
+            days=GetDays();
+	alert("cost is " + days * 2);
+}
+
+}
+
+</script>
+</head>
+<body>
+<form name="form1" align="center" onsubmit="return validateform()" method="get" >
+Name* <input id="name" name="name" type="text" placeholder="Enter your name" > <br>
+Address* <input id="address" name="address" type="text" placeholder="Enter your address" ><br>
+Phone No.* <input id="phone" name="phone" type="text" placeholder="Enter your phone no." ><br>
+City* <input id="city" name="city" type="text" placeholder="Enter your City" ><br>
+Book Due date* <input id="due_date" name="due_date" type="date" ><br>
+Book Drop date* <input id="drop_date" name="drop_date" type="date" ><br>
+<button id="submit" name="submit" type="submit">
+SUBMIT
+</button>
+<button id="clear" name="clear" type="clear">
+CLEAR
+</button>
+
+</form>
+</body>
+</html>
